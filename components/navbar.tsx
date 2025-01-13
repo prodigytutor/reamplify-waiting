@@ -3,6 +3,7 @@ import React from 'react'
 import { auth } from '@clerk/nextjs/server'
 import Link from 'next/link'
 import { UserButton } from '@clerk/nextjs'
+import Image from 'next/image'
 
 
 
@@ -14,6 +15,7 @@ export default async function Navbar() {
         <nav className="bg-gradient-to-br from-indigo-500 to-cyan-500 p-4">
             <div className="flex justify-between">
                 <Link href="/">
+                    <Image src="/reamplify.png" alt="ReAmplify Logo" width={50} height={50} />
                     <span className="text-white font-bold text-xl">ReAmplify</span>
                 </Link>
                 <div>
