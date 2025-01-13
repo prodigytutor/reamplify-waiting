@@ -13,7 +13,7 @@ export default function LandingPage() {
       <header className="hidden px-4 lg:px-6 h-16 flex items-center backdrop-blur-md bg-white/30 dark:bg-gray-800/30 sticky top-0 z-50">
         <motion.a 
           className="flex items-center justify-center" 
-          href="#"
+          href="/waitlist"
           initial="hidden"
           animate="visible"
           variants={slideIn}
@@ -24,7 +24,7 @@ export default function LandingPage() {
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <motion.a 
             className="text-sm font-medium hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" 
-            href="#"
+            href="/waitlist"
             variants={fadeIn}
             initial="hidden"
             animate="visible"
@@ -33,7 +33,7 @@ export default function LandingPage() {
           </motion.a>
           <motion.a 
             className="text-sm font-medium hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" 
-            href="#"
+            href="/waitlist"
             variants={fadeIn}
             initial="hidden"
             animate="visible"
@@ -42,7 +42,7 @@ export default function LandingPage() {
           </motion.a>
           <motion.a 
             className="text-sm font-medium hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" 
-            href="#"
+            href="/waitlist"
             variants={fadeIn}
             initial="hidden"
             animate="visible"
@@ -74,8 +74,10 @@ export default function LandingPage() {
                 <form className="flex space-x-2">
                   <Input className="max-w-lg flex-1" placeholder="Enter your email" type="email" />
                   <Button type="submit" className="bg-indigo-600 hover:bg-indigo-700 text-white">
+                    <Link href='/waitlist'>
                     Get Started
                     <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
                   </Button>
                 </form>
                 <p className="text-xs text-gray-600 dark:text-gray-400">
@@ -169,7 +171,7 @@ export default function LandingPage() {
               </motion.div>
               <motion.div className="w-full max-w-sm space-y-2" variants={scaleIn}>
                 <Button className="w-full bg-white text-indigo-600 hover:bg-indigo-50" size="lg">
-                  <Link href='/dashboard'>Get Started for Free</Link>
+                  <Link href='/waitlist'>Get Started for Free</Link>
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
                 <p className="text-xs text-indigo-100">
@@ -181,12 +183,12 @@ export default function LandingPage() {
         </section>
       </main>
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-white/30 dark:bg-gray-800/30 backdrop-blur-md">
-        <p className="text-xs text-gray-700 dark:text-gray-300">© 2023 ContentAI. All rights reserved.</p>
+        <p className="text-xs text-gray-700 dark:text-gray-300">© 2023 NexAI. All rights reserved.</p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <a className="text-xs hover:underline underline-offset-4 text-gray-700 dark:text-gray-300" href="#">
+          <a className="text-xs hover:underline underline-offset-4 text-gray-700 dark:text-gray-300" href="/waitlist">
             Terms of Service
           </a>
-          <a className="text-xs hover:underline underline-offset-4 text-gray-700 dark:text-gray-300" href="#">
+          <a className="text-xs hover:underline underline-offset-4 text-gray-700 dark:text-gray-300" href="/waitlist">
             Privacy
           </a>
         </nav>
