@@ -1,5 +1,5 @@
 "use client"
-import { ClerkProvider, useAuth } from '@clerk/nextjs'
+import { ClerkProvider } from '@clerk/nextjs'
 
 
 const AppProviders: React.FC<{ children: React.ReactNode }> = ({ children }) => {
